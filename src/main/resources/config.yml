@@ -1,0 +1,104 @@
+
+######################################
+#  ArrowEffects - Premium Edition    #
+#  by Tahoma34                       #
+#  Version: 1.4 - SNAPSHOT           #
+######################################
+
+blacklisted-worlds:
+  - world_nether
+  - world_the_end
+
+arrow-effects:
+  flame-trail:
+    name: "&cОгненный след"
+    material: "BLAZE_POWDER"
+    particles:
+      - "FLAME"
+      - "SMOKE_LARGE"
+    description: "Горящие частицы, создающие иллюзию того, что стрела в огне."
+    slot: 10
+
+  ice-trail:
+    name: "&bЛедяной след"
+    material: "PACKED_ICE"
+    particles:
+      - "SNOWBALL"
+      - "CLOUD"
+      - "DRIP_WATER"
+    description: "Частицы снега и голубого дыма, оставляющие эффект морозного следа."
+    slot: 11
+
+  rainbow-wave:
+    name: "&dРадужная волна"
+    material: "WHITE_DYE"
+    particles:
+      - "REDSTONE"
+    description: "След быстро меняющихся разноцветных частиц."
+    extra:
+      colors:
+        - "RED"
+        - "GREEN"
+        - "BLUE"
+        - "YELLOW"
+        - "PURPLE"
+    slot: 12
+
+  star-trail:
+    name: "&9Звёздный след"
+    material: "NETHER_STAR"
+    particles:
+      - "FIREWORKS_SPARK"
+      - "GLOW"
+    description: "Золотистые вспышки и искры, похожие на падающие звёзды."
+    slot: 13
+
+  black-hole:
+    name: "&7Чёрная дыра"
+    material: "ENDER_PEARL"
+    particles:
+      - "PORTAL"
+      - "END_ROD"
+      - "SMOKE_NORMAL"
+    description: "Вокруг стрелы вращаются темные частицы с добавлением белых искр."
+    slot: 14
+
+  waterfall:
+    name: "&bВодопад"
+    material: "WATER_BUCKET"
+    particles:
+      - "WATER_SPLASH"
+      - "DRIP_WATER"
+      - "BUBBLE"
+    description: "Синий след с эффектом капель воды."
+    slot: 15
+
+  cubic:
+    name: "&2Кубический эффект"
+    material: "GRASS_BLOCK"
+    particles:
+      - "BLOCK_CRACK"
+    description: "Частицы блоков, образующие кубическую форму вокруг стрелы."
+    slot: 16
+
+localization:
+  messages:
+    not-a-player: "&4✕ &fЭту команду могут использовать только игроки!"
+    no-permission: "&4✕ &fУ вас недостаточно прав для выполнения этой команды."
+    unknown-command: "&4✕ &fНеизвестная команда. Используйте &e/sarrow help&f для списка."
+    help-command:
+      - "&a/sarrow &7- &fОткрыть GUI выбора эффектов."
+      - "&a/sarrow cancel &7- &fОтменить эффект стрелы."
+      - "&a/sarrow glow &7- &fВключить/выключить свечение стрел."
+      - "&a/sarrow reload &7- &fПерезагрузить конфигурацию."
+    reload-success: "&2✔ &fКонфигурация плагина успешно перезагружена."
+    glow-toggled: "&2✔ &fСвечение стрел переключено."
+    effect-cancel: "&2✔ &fЭффект стрелы успешно отменён."
+    effect-selected: "&2✔ &fВы выбрали эффект: {effect}."
+    world-blacklisted: "&4✕ &fВы не можете использовать эффекты стрел в этом мире!"
+
+  gui:
+    size: 36
+    title: "&0Выберите эффект стрелы"
+    cancel-effect-slot: 31
+    cancel-item-name: "&c✕ Снять эффект"

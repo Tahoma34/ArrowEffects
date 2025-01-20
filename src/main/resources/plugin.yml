@@ -1,0 +1,33 @@
+
+######################################
+#  ArrowEffects - Premium Edition    #
+#  by Tahoma34                       #
+#  Version: 1.4 - SNAPSHOT           #
+######################################
+
+name: ArrowEffects
+version: 1.4
+main: org.effect.arroweffects.ArrowEffects
+author: Tahoma34
+description: Плагин для добавления эффектов стрел.
+
+commands:
+  sarrow:
+    description: "Основная команда для выбора эффектов стрел."
+
+permissions:
+  arroweffects.use:
+    description: "Право на использование основной команды /sarrow."
+    default: true
+
+  arroweffects.reload:
+    description: "Право на перезагрузку конфигурации (/sarrow reload)."
+    default: op
+
+  arroweffects.glow:
+    description: "Право на включение/выключение свечения (/sarrow glow)."
+    default: op
+
+  arroweffects.bypass.world:
+    description: "Игнорирование чёрного списка миров."
+    default: op
